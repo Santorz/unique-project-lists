@@ -7,6 +7,7 @@ const customTheme = extendTheme({
   },
 
   styles: {
+    // @ts-ignore
     global: (props) => ({
       body: {
         bg: props.colorMode === 'dark' ? '#222222' : 'gray.50',
