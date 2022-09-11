@@ -26,7 +26,7 @@ export const useGetData = () => {
           setErrorMsg('');
           setIsLoading(false);
           setUsersData(resp.data);
-        }, 3000);
+        }, 10000);
       })
       .catch((err: AxiosError | any) => {
         setIsLoading(false);
