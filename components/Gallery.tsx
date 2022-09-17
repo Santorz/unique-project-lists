@@ -1,11 +1,11 @@
-import { FC } from 'react';
+import { FC, useContext } from 'react';
 import { SimpleGrid, Skeleton } from '@chakra-ui/react';
-import { useGetData } from '../hooks/useGetData';
 import EachUserCard from './EachUserCard';
+import { UsersDataContext } from '../pages/_app';
 
 const Gallery: FC = () => {
   // Hooks
-  const { isLoading, isError, usersData } = useGetData();
+  const { isLoading, isError, usersData } = useContext(UsersDataContext);
 
   // Main JSX
   return (
